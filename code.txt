@@ -4,7 +4,7 @@ function drawSpagett(radius, numWaves, spagetts){
     penUp();
     moveTo(randomNumber(0,320), 450);
     turnTo(0);
-    penRGB(randomNumber(10,250),randomNumber(10,250),randomNumber(10,250));
+    penRGB(randomNumber(10,150),randomNumber(10,150),randomNumber(10,150));
     penWidth(randomNumber(1,3));
     penDown();
     arcLeft(randomNumber(0,250),radius);
@@ -19,8 +19,8 @@ function drawSpagett(radius, numWaves, spagetts){
 //Background made by Paul
 dot(300);
 //Spagett made by Corey
-drawSpagett(randomNumber(10,200), randomNumber(10, 30), 50);
-//triangle 
+drawSpagett(randomNumber(10,200), randomNumber(10, 30), 10);
+//triangle code made by Paul
 function triangle(size,red,blu,gre) {
  penDown();
  penWidth(2);
@@ -35,7 +35,7 @@ function triangle(size,red,blu,gre) {
 } 
 penUp();
 //draw all triangles 
-for (var i = 0; i < 74; i++) {
+for (var i = 0; i < 30; i++) {
   moveTo(randomNumber(0,317),randomNumber(0,450));
-  triangle(randomNumber(4, 70), randomNumber(1, 255), randomNumber(1, 255), randomNumber(1, 255));
+  triangle(randomNumber(4, 70), randomNumber(150, 255), randomNumber(150, 255), randomNumber(150, 255));
 }
