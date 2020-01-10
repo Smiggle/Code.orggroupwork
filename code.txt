@@ -1,1 +1,20 @@
+//Random Spegett code by Corey
+function drawSpagett(radius, numWaves, spagetts){
+  for (var i = 0; i < spagetts; i++) {
+    moveTo(randomNumber(0,320), 450);
+    turnTo(0);
+    penRGB(randomNumber(0,250),randomNumber(0,250),randomNumber(0,250));
+    penWidth(3);
+    penDown();
+    arcLeft(30,radius);
+    for(var k = 0; k < numWaves; k++){
+      arcRight(randomNumber(30,250),radius);
+      arcLeft(randomNumber(30,250),radius);
+    }
+  }
+  penUp();
+}
+
+
 dot(300);
+drawSpagett(randomNumber(10,200), randomNumber(10, 200), 500);
