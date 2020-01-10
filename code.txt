@@ -1,6 +1,7 @@
 //Random Spegett code by Corey
 function drawSpagett(radius, numWaves, spagetts){
   for (var i = 0; i < spagetts; i++) {
+    penUp();
     moveTo(randomNumber(0,320), 450);
     turnTo(0);
     penRGB(randomNumber(0,250),randomNumber(0,250),randomNumber(0,250));
@@ -12,9 +13,10 @@ function drawSpagett(radius, numWaves, spagetts){
       arcLeft(randomNumber(30,250),radius);
     }
   }
-  penUp();
 }
 
 
+//Background made by Paul
 dot(300);
+//Spagett made by Corey
 drawSpagett(randomNumber(10,200), randomNumber(10, 200), 500);
