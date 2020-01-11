@@ -14,13 +14,7 @@ function drawSpagett(radius, numWaves, spagetts){
     }
   }
 }
-
-
-//Background made by Paul
-dot(300);
-//Spagett made by Corey
-drawSpagett(randomNumber(10,200), randomNumber(10, 30), 10);
-//triangle code made by Paul
+//triangle code made by Paul;
 function triangle(size,red,blu,gre) {
  penDown();
  penWidth(2);
@@ -32,10 +26,18 @@ function triangle(size,red,blu,gre) {
  moveForward(size);
  turnLeft(120);
  penUp();
-} 
-penUp();
-//draw all triangles 
-for (var i = 0; i < 30; i++) {
-  moveTo(randomNumber(0,317),randomNumber(0,450));
-  triangle(randomNumber(4, 70), randomNumber(150, 255), randomNumber(150, 255), randomNumber(150, 255));
 }
+//drawTriBoiz funtion made by Corey
+function drawTriBoiz(amount) {
+  //draw all triangles by Paul
+  for (var i = 0; i < amount; i++) {
+    moveTo(randomNumber(0,317),randomNumber(0,450));
+    triangle(randomNumber(4, 70), randomNumber(150, 255), randomNumber(150, 255), randomNumber(150, 255));
+  }
+}
+//Background made by Paul
+dot(300);
+//Spagett made by Corey
+drawSpagett(randomNumber(10,200), randomNumber(10, 30), 10);
+penUp();
+drawTriBoiz(20);
