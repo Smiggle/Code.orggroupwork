@@ -35,7 +35,7 @@ function drawTriBoiz(amount) {
     triangle(randomNumber(4, 70), randomNumber(150, 255), randomNumber(150, 255), randomNumber(150, 255));
   }
 }
-//Background made by Paul
+//Bowling Ball Code made by Connor
 function drawBowlingballs() {
   penUp();
   for (var i = 0; i < randomNumber(2, 8); i++) {
@@ -54,6 +54,7 @@ function drawBowlingballs() {
     dot(5);
   }
 }
+//Background made by Paul
 dot(300);
 //Spagett made by Corey
 drawSpagett(randomNumber(10,200), randomNumber(10, 30), 10);
