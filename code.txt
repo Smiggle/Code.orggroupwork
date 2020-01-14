@@ -27,7 +27,7 @@ function triangle(size,red,blu,gre) {
  turnLeft(120);
  penUp();
 }
-//drawTriBoiz funtion made by Corey
+//draws all triangles
 function drawTriBoiz(amount) {
   //draw all triangles by Paul
   for (var i = 0; i < amount; i++) {
@@ -73,3 +73,4 @@ penUp();
 drawTriBoiz(20);
 //Connor's bowlin' balls (circles)
 drawBowlingballs();
+hide()
