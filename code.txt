@@ -1,4 +1,4 @@
-//Random Spegett code by Corey
+//Random Spegetti/squiggly lines code by Corey
 function drawSpagett(radius, numWaves, spagetts){
   for (var i = 0; i < spagetts; i++) {
     penUp();
