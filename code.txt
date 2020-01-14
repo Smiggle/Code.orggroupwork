@@ -38,7 +38,7 @@ function drawTriBoiz(amount) {
 //Bowling Ball Code made by Connor
 function drawBowlingballs() {
   penUp();
-  for (var i = 0; i < randomNumber(2, 8); i++) {
+  for (var i = 0; i < randomNumber(3, 5); i++) {
     penRGB(randomNumber(0, 255), randomNumber(0, 255), randomNumber(0, 255), 1);
     moveTo(randomNumber(0, 320), randomNumber(0, 450));
     dot(randomNumber(40, 45));
@@ -54,8 +54,19 @@ function drawBowlingballs() {
     dot(5);
   }
 }
+//Connor & Tyler (background dots)
+function backgroundBalls() {
+  for (var i = 0; i < 100; i++) {
+    penUp();
+    penRGB(randomNumber(15, 100), randomNumber(25, 100), randomNumber(15, 100), 1);
+    moveTo(randomNumber(0, 320), randomNumber(0, 450));
+    dot(randomNumber(2, 3));
+  }
+}
 //Background made by Paul
 dot(300);
+//Tyler's Background dots
+backgroundBalls();
 //Spagett made by Corey
 drawSpagett(randomNumber(10,200), randomNumber(10, 30), 10);
 penUp();
